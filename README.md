@@ -32,4 +32,16 @@ Particle's API allows you to specify a parameter with each request `chainId`,
 which takes the integer number of the chain that you want to query. And yes, 
 I also wrote and included some web3 middlware so that you can start using 
 this is all of your other web3 projects! 
+
+Got to [particle.networks](particle.networks) and create an API key. Update 
+the .env file with your server key and project id. Good to go!
 </p>
+
+
+#### Damn
+
+<p>
+I know, right? Now also check out the middleware that enables you to use 
+particle in web3.py ! 
+</p>
+
