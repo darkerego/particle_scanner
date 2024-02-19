@@ -1,0 +1,2 @@
+class DotenvNotConfigured(Exception):
+    pass
