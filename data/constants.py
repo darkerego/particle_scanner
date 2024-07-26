@@ -7,8 +7,6 @@ from hexbytes import HexBytes
 NULL_KEY = '0x' + '0' * 64
 ZERO_ADDRESS = '0x' + '0' * 40
 NULL_ADDRESS = '0x' + 'f' * 40
-ANON_KEY_BYTES = b'cf2f7f0f9cbf631adefffe63f9b666e1e01628d6350a80545570ce53ab7bc96a'
-KEY_BYTES = b'9806ae3f92dc062c4ff678a66689044294e7d0a001c101f821884535b2f1586b'
 DEFAULT_CHAINS = ["bsc", "eth", "polygon", "arbitrum", "optimism"]
 CHAIN_LEGACY = [("bsc", True), ("eth", False), ("polygon", False), ("arbitrum", False), ("optimism", False)]
 CHAIN_ALIASES: list[tuple[str, str]] = [('binance', 'bsc'), ('eth', 'ethereum')]

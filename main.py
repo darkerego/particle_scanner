@@ -9,7 +9,7 @@ import time
 from typing import Union, Any
 
 import dotenv
-import httpcore
+#import httpcore
 import httpx
 import tqdm
 import tqdm.asyncio
@@ -282,7 +282,7 @@ class ParticleApi:
             except (httpx.ReadTimeout, httpx.ReadError) as err:
                 self.logger.error('Http Error making request: %s, sleeping for %s' % (err, sleep_for_attempt))
                 await asyncio.sleep(sleep_for_attempt)
-            except (httpx.ConnectTimeout, httpx.HTTPStatusError, httpcore.ConnectError) as err:
+            except (httpx.ConnectTimeout, httpx.HTTPStatusError, httpx.ConnectError) as err:
                 self.logger.error('Http conn timeout: %s' % err)
                 await asyncio.sleep(sleep_for_attempt)
             except Exception as err:
